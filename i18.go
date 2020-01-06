@@ -6,10 +6,12 @@ import (
 	"os"
 )
 
+var i18Map map[string]string
+
 // ParseJSONi18File parse string to map
 // filePath is path to file with json struct key:value
 // return map string:string
-func ParseJSONi18File(filePath string) (map[string]string, error) {
+func parseJSONi18File(filePath string) (map[string]string, error) {
 
 	var i18 map[string]string
 
@@ -29,4 +31,20 @@ func ParseJSONi18File(filePath string) (map[string]string, error) {
 	json.Unmarshal(fileByte, &i18)
 
 	return i18, nil
+}
+
+// i18 check if key exist & return value
+// if not exist return key
+func i18(key string) string {
+
+	if key == "" {
+		return key
+	}
+
+	if val, ok := i18Map[key]; ok {
+		return val
+	}
+
+	return key
+
 }
