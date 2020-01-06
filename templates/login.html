@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>{{i18 "login_title"}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="/" method="GET">
+                    <div class="form-group">
+                        <input id="username" 
+                          name="username"
+                          class="form-control form-control-lg" 
+                          type="text" 
+                          placeholder='{{i18 "login_username"}}'
+                          autocomplete="off"
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input id="password"
+                          name="password"
+                          class="form-control form-control-lg"  
+                          type="password" 
+                          placeholder='{{i18 "login_password"}}'
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                      {{i18 "login_signIn"}}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+  </body>
+
+</html>

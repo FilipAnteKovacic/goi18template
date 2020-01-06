@@ -1,0 +1,11 @@
+{
+    "login_title":"Template i18 example - login",
+    "login_signIn":"Sign in",
+    "login_username":"Username",
+    "login_password":"Password",
+
+    "index_title":"template i18 example",
+    "index_headline":"This is content",
+    "content_title":"Card content",
+    "content_content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum a justo in vestibulum. Nunc vehicula bibendum est, eu faucibus ligula malesuada id. Mauris mattis ullamcorper egestas."
+}

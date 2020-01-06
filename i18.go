@@ -6,8 +6,6 @@ import (
 	"os"
 )
 
-var i18Map map[string]string
-
 // ParseJSONi18File parse string to map
 // filePath is path to file with json struct key:value
 // return map string:string
